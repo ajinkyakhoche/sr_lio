@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import rospy
 from sensor_msgs.msg import PointCloud2, PointField
 import sensor_msgs.point_cloud2 as pcl2
