@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(sr_lio)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3")
 
 find_package(catkin REQUIRED COMPONENTS
   eigen_conversions
@@ -46,7 +46,7 @@ endif ()
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL 1.7 REQUIRED)
-find_package(Ceres REQUIRED)
+find_package(Ceres REQUIRED PATHS "~/workspace/ceres")
 
 catkin_package(
   CATKIN_DEPENDS geometry_msgs nav_msgs roscpp rospy std_msgs
